@@ -1,0 +1,170 @@
+:root {
+    --white-principal: #FFFFFF;
+    --grey-secondary: #C0C0C0;
+    --button-blue: #1E2267;
+    --bgk-color: #00030C;
+    --font-principal: 'Inter';
+    --button-blue-effect: #8B0000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bgk-color);
+    color: var(--white-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal {
+    background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container__box {
+    margin: 0 8em;
+}
+
+.container__title {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__subtitle {
+    color: var(--grey-secondary);
+    font-size: 22px;
+}
+
+.container__warning {
+    font-size: 12px;
+    color: var(--grey-secondary);
+}
+
+.button {
+    background-color: var(--button-blue);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--white-principal);
+    display: block;
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+.button:hover {
+    background-color: var(--button-blue-effect);
+}
+
+.complement {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.complement__image {
+    width: 80%;
+}
+
+.container__description {
+    padding: 2em;
+}
+
+.description__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--white-principal);
+    margin-bottom: 0.2em;
+}
+
+.description__text {
+    color: var(--grey-secondary);
+}
+
+.otherHeroes {
+    text-align: center;
+}
+
+.otherHeroes__title {
+    font-size: 48px;
+    color: var(--white-principal);
+}
+
+.otherHeroes__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 5em 0;
+}
+
+.list__item {
+    padding: 1em 0;
+}
+
+.list__item a {
+    text-decoration: none;
+}
+
+.list__item h3 {
+    font-size: 20px;
+    color: var(--white-principal);
+    margin-top: .8em;
+}
+
+.list__item:hover {
+    border: 2px solid var(--white-principal);
+    border-radius: 10px;
+}
+
+.otherHeroes__image {
+    width: 50%;
+}
+
+.footer {
+    text-align: center;
+    margin: 5em 10em;
+}
+
+.footer__list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.footerList__link a {
+    margin: 0 .7em;
+    text-decoration: none;
+    color: var(--white-principal);
+    font-size: 16px;
+}
+
+.footerList__link a:hover {
+    color: var(--button-blue-effect);
+}
+
+.footer__text {
+    color: var(--grey-secondary);
+    font-size: 14px;
+    margin-bottom: 2em;
+}
+
+.footer__text a {
+    color: var(--grey-secondary);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer__text a:hover {
+    text-decoration: underline;
+}
